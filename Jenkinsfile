@@ -2,7 +2,7 @@ def server = Artifactory.server('artifactory')
 def uploadSpec
 
 pipeline{
-agent { label 'MacBuilder' }
+agent any
 stages{
 stage('Build'){
             steps {
