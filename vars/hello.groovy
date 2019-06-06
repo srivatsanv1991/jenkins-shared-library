@@ -1,5 +1,5 @@
 
-def call(String name = 'human'){
+def call(){
 
 def server = Artifactory.server('artifactory')
 def uploadSpec
