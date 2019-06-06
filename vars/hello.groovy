@@ -1,3 +1,6 @@
+
+def call(String name = 'human'){
+
 def server = Artifactory.server('artifactory')
 def uploadSpec
 
@@ -86,4 +89,5 @@ server.upload(uploadSpec)
         }
 }
 
+}
 }
