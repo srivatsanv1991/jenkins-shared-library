@@ -22,7 +22,7 @@ time.sleep(5)
 userName = driver.find_element_by_name('user')
 userName.send_keys('admin')
 password = driver.find_element_by_name('password')
-password.send_keys('password')
+password.send_keys('password123')
 
 loginForm = driver.find_element_by_name('Login.loginForm')
 loginForm.submit()
