@@ -17,7 +17,10 @@ chrome_options.add_argument("--ignore-certificate-errors")
 driver = webdriver.Chrome(options=chrome_options)
 driver.get('http://172.18.0.3:8081/artifactory/')
 
-time.sleep(7)
+time.sleep(3)
+
+driver.get('http://localhost:8081/artifactory/webapp/#/login')
+time.sleep(3)
 
 userName = driver.find_element_by_name('user')
 userName.send_keys('admin')
