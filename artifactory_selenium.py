@@ -16,7 +16,7 @@ chrome_options.add_argument("--ignore-certificate-errors")
 #driver = webdriver.Chrome(chrome_options=chrome_options)
 driver = webdriver.Chrome(options=chrome_options)
 
-driver.get('http://172.18.0.3:8081/artifactory/webapp/#/login')
+driver.get('http://172.17.0.3:8081/artifactory/webapp/#/login')
 time.sleep(5)
 
 userName = driver.find_element_by_name('user')
@@ -31,7 +31,7 @@ time.sleep(2)
 #driver.get('http://localhost:8081/artifactory/webapp/#/admin/repositories/local')
 
 #time.sleep(2)
-driver.get('http://172.18.0.3:8081/artifactory/webapp/#/admin/repository/local/new')
+driver.get('http://172.17.0.3:8081/artifactory/webapp/#/admin/repository/local/new')
 time.sleep(2)
 
 filterName = driver.find_element_by_id('package-type-filter')
